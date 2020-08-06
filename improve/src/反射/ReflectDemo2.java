@@ -29,6 +29,7 @@ public class ReflectDemo2 {
         for(Field declaredFiled:declaredFields){
             System.out.println(declaredFiled);
         }
+
         //可以获取非public修饰符的变量
         Field  d = cls4.getDeclaredField("d");
         d.setAccessible(true);//忽视访问权限修饰符的安全检测

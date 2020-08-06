@@ -12,6 +12,7 @@ public class ReflectDemo3 {
         //创建对象
         Object person = constructor.newInstance("张三", 23);
         System.out.println(person);
+
         //空参创建对象
         Object o = cls5.newInstance();
         System.out.println(o);

@@ -12,6 +12,7 @@ public class ReflectDemo4 {
         Method eat_method = cls6.getMethod("eat");
         Person p =new Person();
         eat_method.invoke(p);//执行方法
+
         //获取有参成员方法
         Method eat_method2 = cls6.getMethod("eat", String.class);
         eat_method2.invoke(p,"西红柿");
@@ -26,6 +27,7 @@ public class ReflectDemo4 {
             System.out.println(name);
             //method.setAccessible(true);
         }
+
         //3.获取类名
         String className = cls6.getName();
         System.out.println(className);
