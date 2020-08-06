@@ -16,7 +16,7 @@ class ExtendsTest extends Thread{
     }
 }
 
-class ImplementsTest implements Runnable {
+class ImplementsTest implements Runnable{
     private int apples=50;
 
     public void run() {
@@ -25,7 +25,7 @@ class ImplementsTest implements Runnable {
         }
     }
 }
-public class TheDifferenceBetweenImplementsAndExtends {
+public class TheDifferenceOfImplementsAndExtends {
     public static void main(String[] args) {
 
         ExtendsTest et1 = new ExtendsTest("A");
