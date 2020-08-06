@@ -2,7 +2,7 @@ package 反射;
 
 import java.lang.reflect.Field;
 
-public class ReflectDemo2 {
+public class GetVariable {
     public static void main(String[] args) throws Exception {
         Class cls4 = Person.class;
 
@@ -14,11 +14,14 @@ public class ReflectDemo2 {
         System.out.println("-----------------------------");
 
         //2.Field getField("名称")
-        Field a = cls4.getField("a");
         Person p = new Person();
+
+        //p.a="a";不设置a的值，获得为null
+        Field a = cls4.getField("a");//获得到person中的public String a变量
 
         Object value = a.get(p);//获取a的值
         System.out.println(value);
+
         a.set(p,"Jarvis");//设置a的值
         System.out.println(p);
 
@@ -30,8 +33,10 @@ public class ReflectDemo2 {
             System.out.println(declaredFiled);
         }
 
+        System.out.println("===============================");
+
         //可以获取非public修饰符的变量
-        Field  d = cls4.getDeclaredField("d");
+        Field d = cls4.getDeclaredField("d");
         d.setAccessible(true);//忽视访问权限修饰符的安全检测
         Object value2 = d.get(p);
         System.out.println(value2);

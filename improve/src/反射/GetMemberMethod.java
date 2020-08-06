@@ -1,10 +1,9 @@
 package 反射;
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Member;
+
 import java.lang.reflect.Method;
 
-public class ReflectDemo4 {
+public class GetMemberMethod {
     public static void main(String[] args) throws Exception {
         Class cls6 = Person.class;
 
@@ -27,6 +26,8 @@ public class ReflectDemo4 {
             System.out.println(name);
             //method.setAccessible(true);
         }
+
+        System.out.println("--------------------------------");
 
         //3.获取类名
         String className = cls6.getName();

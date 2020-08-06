@@ -4,7 +4,7 @@ import java.io.InputStream;
 import java.lang.reflect.Method;
 import java.util.Properties;
 
-public class ReflectTest {
+public class UseConfigurationFile {
     //不改动代码前提下，可以创建任意类的对象，可以执行任意方法
     public static void main(String[] args) throws Exception{
         //1.加载配置文件
@@ -12,8 +12,8 @@ public class ReflectTest {
         Properties pro = new Properties();
         //1.2加载配置文件转换为一个集合
         //1.2.1获取class目录下的配置文件
-        ClassLoader classLoader = ReflectTest.class.getClassLoader();
-        InputStream is = classLoader.getResourceAsStream("pro.properties");
+        ClassLoader classLoader = UseConfigurationFile.class.getClassLoader();
+        InputStream is = classLoader.getResourceAsStream("/src/反射/pro.properties");
         pro.load(is);
 
         //2.获取配置文件中定义的数据

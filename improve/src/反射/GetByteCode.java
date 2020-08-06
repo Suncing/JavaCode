@@ -1,6 +1,6 @@
 package 反射;
 
-public class ReflectDemo1 {
+public class GetByteCode {
     public static void main(String[] args) throws Exception{
         //1.Class.forName("全类名")，多用于配置文件
         Class cls1 = Class.forName("反射.Person");

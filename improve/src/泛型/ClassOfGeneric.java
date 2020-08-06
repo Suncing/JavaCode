@@ -46,7 +46,5 @@ public class ClassOfGeneric {
         System.out.println(intGeneric.getClass());
         System.out.println(stringGeneric.getClass());
         System.out.println(intGeneric.getClass()==stringGeneric.getClass());
-
-
     }
 }

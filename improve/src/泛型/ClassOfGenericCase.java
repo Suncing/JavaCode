@@ -11,7 +11,6 @@ class ProductGetter<T>{
     //奖品集合
     ArrayList<T> list = new ArrayList<>();
 
-
     //添加奖品
     public void addProduct(T t){
         list.add(t);
