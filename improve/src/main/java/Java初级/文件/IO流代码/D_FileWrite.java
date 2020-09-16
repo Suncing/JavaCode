@@ -1,0 +1,17 @@
+package Java初级.文件.IO流代码;
+
+import org.junit.Test;
+
+import java.io.FileWriter;
+
+public class D_FileWrite {
+    private static String path ="D:\\Zoom\\github\\JavaCode\\improve\\src\\main\\java\\Java初级\\文件\\生成文件\\宇智波鼬.txt";
+
+    @Test
+    public void m1() throws Exception{
+        FileWriter fw = new FileWriter(path);
+        fw.write("宇智波鼬，日本动漫《火影忍者》中的重要人物。火之国木叶隐村宇智波一族的天才忍者，宇智波佐助的哥哥。年幼时他与宇智波止水是挚友，实力强大，擅长使用幻术。为了保护村子免受战乱，同时为了宇智波一族的荣耀之名，被迫接受了木叶高层志村团藏下令的灭族任务，留下了弟弟佐助并刺激他向自己复仇，之后加入晓组织做卧底。最终在与弟弟宇智波佐助的战斗中为佐助注入瞳力后，因身体患有不治之症，体力不支而死亡。\n" +
+                "第四次忍界大战中被药师兜以秽土转生的形式复活，在与漩涡鸣人、奇拉比的对战中，鼬发动万花筒写轮眼触发了原本留给鸣人体内装有止水左眼的乌鸦并对鼬使用了别天神，从而让鼬摆脱秽土转生的控制，后与佐助合力击败药师兜，最终秽土转生解除后，灵魂升天。");
+        fw.close();
+    }
+}
