@@ -9,7 +9,7 @@ public class GetVariable {
         //1.Field[] getFields()获取所有public修饰的成员变量
         Field[] fields = cls4.getFields();
         for(Field field:fields){
-            System.out.println(fields);
+            System.out.println(field);
         }
         System.out.println("-----------------------------");
 

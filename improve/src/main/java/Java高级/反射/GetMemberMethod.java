@@ -32,5 +32,8 @@ public class GetMemberMethod {
         //3.获取类名
         String className = cls6.getName();
         System.out.println(className);
+
+        //4.获取所有public修饰的方法
+        Method[] methods2 = cls6.getDeclaredMethods();
     }
 }

@@ -70,20 +70,12 @@ public class Java8StreamTest {
        strings.parallelStream().forEach(str-> System.out.println(str));
    }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+   @Test
+    public void sorted(){
+        List<String> strings = Arrays.asList("abc","","bc","bc","efg","abcd","jkl","jkl");
+        List<String> collect = strings.stream().sorted().collect(Collectors.toList());
+        System.out.println(collect);
+    }
 
     //工具类，=：字符串转化成字符数组
     public static Stream<Character> getCharacterByString(String str){
@@ -94,3 +86,19 @@ public class Java8StreamTest {
         return characterList.stream();
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
