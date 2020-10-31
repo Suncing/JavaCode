@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 
 
-public class 玩笑 extends JFrame {
+public class 恶搞玩笑 extends JFrame {
 
     private static final long serialVersionUID = 1L;
     private static final int w = 400,h=400;
@@ -12,7 +12,7 @@ public class 玩笑 extends JFrame {
     public static String imagePath = "D:\\Item\\joke\\src\\3.png";
 
 
-    public 玩笑(String name) {
+    public 恶搞玩笑(String name) {
         setTitle(name);											//设置窗口标题
         setSize(w, h);										//设置窗口大小
         setLocationRelativeTo(null);							//设置窗口位置居中
@@ -94,7 +94,7 @@ public class 玩笑 extends JFrame {
     }
 
     public static void main(String[] args) {
-        new 玩笑("这里提问");
+        new 恶搞玩笑("这里提问");
     }
 }
 
