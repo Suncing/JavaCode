@@ -2,7 +2,7 @@ package Java相关;
 
 import org.junit.Test;
 
-public class CharacterUse {
+public class 判断字符 {
 
     @Test
     public void test1(){
