@@ -1,0 +1,17 @@
+
+
+
+
+String:
+    String s1 = "Hello",s2="World";
+    String s3 = s1 + s2;
+    在执行上句代码中，计算机内存数据域会开辟一段新内存s3,然后将s1和s2相加放入s3中
+StringBuffer：
+    可以使用append/delete给字符序列中增加删除字符
+    其线程安全，效率低。
+StringBuilder:
+    其线程不安全，效率高。
+
+
+容器：
+    容器中remove底层是equals方法
