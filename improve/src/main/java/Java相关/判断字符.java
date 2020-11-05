@@ -13,6 +13,13 @@ public class 判断字符 {
     public void test2(){
         System.out.println(Character.isDigit(1));
     }
+
+    @Test
+    public void test3(){
+        String str = "Naru.to";
+        int idx = str.indexOf(".");//indexOf返回字符所在位置，没有该字符返回-1
+        System.out.println(str.substring(idx).toLowerCase());
+    }
     /**
      * 1、isLetter()方法用于判断指定字符是否为字母
      * boolean isLetter(char ch)
