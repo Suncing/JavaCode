@@ -1,18 +1,15 @@
-import java.util.Calendar;
-import java.util.Date;
+import java.io.*;
+
+/**
+ * 将二进制流转换成图片文件
+ * @author 晚风工作室 www.soservers.com
+ *
+ */
 
 public class Test {
-    @org.junit.Test
-    public void test(){
-//      for(int i=10;i<54;i++){
-//          System.out.print("split["+i+"]"+"+"+"\",\""+"+");
-//      }
-        String name ="asdasd.asd.EXE";
-        int idx = name.indexOf(".");
-        int dex2 = name.lastIndexOf(".");
-        System.out.println(idx);
-        System.out.println(dex2);
-        String suf =name.substring(name.lastIndexOf(".")).toLowerCase();
-        System.out.println(suf);
+    public static void main(String[] args) {
+       String ss = "0023132003";
+        System.out.println(ss.replace("0", ""));
     }
 }
+
